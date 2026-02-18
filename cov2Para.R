@@ -43,4 +43,6 @@ cov2Para <- function(Y, k = -1) {
   
   # compute shrinkage estimator
   sigmahat <- shrinkage * target + (1 - shrinkage) * sample
+
+  return(sigmahat)
 }
