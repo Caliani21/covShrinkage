@@ -33,4 +33,6 @@ qis <- function(Y, k = -1) {
   }
   deltaQIS <- delta * (sum(lambda) / sum(delta))    # preserve trace
   sigmahat <- u %*% diag(deltaQIS) %*% t(u)    #reconstruct covariance matrix
+
+  return(sigmahat)
 }
