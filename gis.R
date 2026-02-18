@@ -34,4 +34,6 @@ gis <- function(Y, k = -1) {
     stop("p must be <= n for the Symmetrized Kullback-Leibler divergence")
   }
   sigmahat <- u %*% diag(sqrt(deltaQIS / deltaLIS)) %*% t(u)    #reconstruct covariance matrix
+
+  return(sigmahat)
 }
