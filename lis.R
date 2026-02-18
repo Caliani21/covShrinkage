@@ -30,4 +30,6 @@ lis <- function(Y, k = -1) {
     stop("p must be <= n for Stein''s loss")
   }
   sigmahat <- u %*% diag(1 / deltaLIS) %*% t(u)    #reconstruct covariance matrix
+
+  return(sigmahat)
 }
